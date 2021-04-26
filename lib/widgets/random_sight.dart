@@ -120,7 +120,7 @@ class RandomSight extends StatelessWidget {
                                                   children: [
                                                     FittedBox(
                                                       child: Text(
-                                                        addr.locality + ", " + addr.countryName,
+                                                        addr.locality != null ? (addr.locality + ", " + addr.countryName) : "Not available",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.w500,
                                                           fontSize: 14,

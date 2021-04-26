@@ -131,7 +131,7 @@ class SightsScrollerRated extends StatelessWidget {
                                                             child: Column(
                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                               children: [
-                                                                Text(addr.locality + ", " + addr.countryName,
+                                                                Text(addr.locality != null ? (addr.locality + ", " + addr.countryName) : "Not available",
                                                                     //"Placeholder location",
                                                                     style: TextStyle(
                                                                       fontWeight: FontWeight.w500,

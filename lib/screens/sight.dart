@@ -134,7 +134,7 @@ class _SightScreenState extends State<SightScreen> {
                         children: [
                           Text(sight["name"], style: Theme.of(context).textTheme.headline4),
                           SizedBox(height: 10),
-                          Text(addr.locality + ", " + addr.countryName,
+                          Text(addr.locality != null ? (addr.locality + ", " + addr.countryName) : "Not available",
                               style: Theme.of(context).textTheme.subtitle1.copyWith(color: Theme.of(context).textTheme.headline1.color.withOpacity(0.7))),
                           SizedBox(height: 20),
                           Row(

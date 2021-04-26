@@ -61,6 +61,7 @@ class InfoPanel extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.all(30.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Flexible(
